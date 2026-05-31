@@ -27,9 +27,12 @@
         </audio>
         <button id="playMusic">🎵</button>
         <script>
-            const musica = document.getElementById("musica");
-            musica.volume = 0.1;
-        </script>
+                const musica = document.getElementById("musica");
+
+                document.getElementById("playMusic").addEventListener("click", function() {
+                musica.play();
+            });
+    </script>
         <footer>
             <p>&copy; 2026 <a href="https://www.instagram.com/kayky.gg/" target="_black">Kayky</a>. Todos os direitos reservados.</p>
         </footer>
