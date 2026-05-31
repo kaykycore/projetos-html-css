@@ -28,11 +28,20 @@
         <button id="playMusic">🎵</button>
         <script>
                 const musica = document.getElementById("musica");
+                const botao = document.getElementById("playMusic");
 
-                document.getElementById("playMusic").addEventListener("click", function() {
-                musica.play();
-            });
-    </script>
+                botao.addEventListener("click", function() {
+
+                    if (musica.paused) {
+                        musica.play();
+                        botao.textContent = "⏸";
+                    } else {
+                        musica.pause();
+                        botao.textContent = "🎵";
+                    }
+
+                });
+        </script>
         <footer>
             <p>&copy; 2026 <a href="https://www.instagram.com/kayky.gg/" target="_black">Kayky</a>. Todos os direitos reservados.</p>
         </footer>
