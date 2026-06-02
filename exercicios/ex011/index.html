@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir essa imagem em varios dispositivos siferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/imagem_P_300x300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/imagem_M_700x700.png" type="image/png">
+        <img src="imagem/imagem_G_1000x1000.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/phonk.mp3" type="audio/mpeg">
+        <source src="midias/phonk.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midias/phonk.mp3">Clique aqui pra baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>
